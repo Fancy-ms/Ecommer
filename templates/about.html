@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}About | {{ store_name }}{% endblock %}
+{% block content %}
+<section class="page-hero">
+    <span class="eyebrow">OUR STORY</span>
+    <h1>Everyday living,<br>thoughtfully considered.</h1>
+    <p>{{ store_tagline }}</p>
+</section>
+<section class="about-layout page-container">
+    <div class="about-image"><img src="{{ about_image }}" alt="Our store and collection"></div>
+    <div class="about-copy">
+        <span class="eyebrow">WHO WE ARE</span>
+        <h2>A store built around the things that matter every day.</h2>
+        <p>At {{ store_name }}, our idea is simple: make it easier to find useful, well-considered products for everyday life.</p>
+        <p>We focus on a straightforward shopping experience, clear product information, and a collection that feels practical and easy to enjoy.</p>
+        <a class="text-link" href="/">Explore the collection <span>→</span></a>
+    </div>
+</section>
+{% endblock %}

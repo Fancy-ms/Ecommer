@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Contact | {{ store_name }}{% endblock %}
+{% block content %}
+<section class="page-hero">
+    <span class="eyebrow">GET IN TOUCH</span>
+    <h1>We'd love to<br>hear from you.</h1>
+    <p>Have a question about a product or an order? Reach out to us.</p>
+</section>
+<section class="contact-grid page-container">
+    <div class="contact-card">
+        <span class="contact-icon">✉</span>
+        <h2>Email</h2>
+        <p>For general questions and support.</p>
+        <a class="text-link" href="mailto:{{ contact_email }}">{{ contact_email }}</a>
+    </div>
+    <div class="contact-card">
+        <span class="contact-icon">☎</span>
+        <h2>Phone</h2>
+        <p>Talk to our team.</p>
+        <a class="text-link" href="tel:{{ contact_phone }}">{{ contact_phone }}</a>
+    </div>
+    <div class="contact-card">
+        <span class="contact-icon">⌖</span>
+        <h2>Location</h2>
+        <p>Our store location.</p>
+        <span>{{ store_address }}</span>
+    </div>
+</section>
+{% endblock %}

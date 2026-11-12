@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Order confirmed | {{ store_name }}{% endblock %}
+{% block content %}
+<section class="confirmation page-container">
+    <div class="confirmation-icon">✓</div>
+    <span class="eyebrow">THANK YOU</span>
+    <h1>Your order has been received.</h1>
+    <p>Thank you for shopping with {{ store_name }}. Your order details have been saved.</p>
+    <a class="button button-dark" href="/">Continue shopping</a>
+</section>
+{% endblock %}

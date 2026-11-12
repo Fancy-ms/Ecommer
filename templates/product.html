@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}{{ product.name }} | {{ store_name }}{% endblock %}
+{% block content %}
+<div class="page-container">
+    <a class="back-link" href="/">← Back to collection</a>
+    <section class="product-detail">
+        <div class="detail-image">
+            <img src="{{ product.image }}" alt="{{ product.name }}">
+        </div>
+        <div class="detail-copy">
+            <span class="eyebrow">{{ product.category }}</span>
+            <h1>{{ product.name }}</h1>
+            <p class="detail-price">₹{{ "%.2f"|format(product.price) }}</p>
+            <p class="detail-description">{{ product.description }}</p>
+            <p class="detail-note">A considered choice for your everyday routine.</p>
+            <a class="button button-dark button-wide" href="/checkout/{{ product.id }}">Continue to checkout</a>
+            <p class="small-note">Simple checkout · No account required</p>
+        </div>
+    </section>
+</div>
+{% endblock %}
